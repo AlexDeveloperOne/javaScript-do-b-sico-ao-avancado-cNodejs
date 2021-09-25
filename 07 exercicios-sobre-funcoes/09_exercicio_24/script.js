@@ -1,24 +1,15 @@
-function multiplicarTresNumeros (x,y,z) {
-    return x * y * z;
-}
+function potenciaFunction (x,y) {
+    var cont = 1;
+    const POTENCIA = x;
 
-console.log(multiplicarTresNumeros(2,3,4));
-
-const mult = multiplicarTresNumeros(5,4,8);
-
-console.log("O valor de mult é " + mult);
-
-
-function podeDirigir (idade, CNH) {
-    if(idade >= 18 && CNH == true) {
-        console.log("Pode dirigir");
-    } else {
-        console.log("Não pode dirigir");
+    while (cont < y) {
+        x = x * POTENCIA;
+        cont++;
     }
+    //não utilizei Math.pow() ou 'x ** y'; -> para aumentar o desafio;
+    return console.log(x)
 }
 
-console.log(podeDirigir(19,true));
-console.log(podeDirigir(25,true));
-console.log(podeDirigir(44,0));
-console.log(podeDirigir(19,1));
-console.log(podeDirigir(17,false));
+potenciaFunction(2,2);
+potenciaFunction(3,2);
+potenciaFunction(4,4);

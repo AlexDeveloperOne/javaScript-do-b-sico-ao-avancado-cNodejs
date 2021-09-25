@@ -1,24 +1,9 @@
-function multiplicarTresNumeros (x,y,z) {
-    return x * y * z;
+function suaIdade (idade) {
+    return console.log(`Você tem ${idade} anos!`);
 }
 
-console.log(multiplicarTresNumeros(2,3,4));
+suaIdade(28);
 
-const mult = multiplicarTresNumeros(5,4,8);
+suaIdade(12);
 
-console.log("O valor de mult é " + mult);
-
-
-function podeDirigir (idade, CNH) {
-    if(idade >= 18 && CNH == true) {
-        console.log("Pode dirigir");
-    } else {
-        console.log("Não pode dirigir");
-    }
-}
-
-console.log(podeDirigir(19,true));
-console.log(podeDirigir(25,true));
-console.log(podeDirigir(44,0));
-console.log(podeDirigir(19,1));
-console.log(podeDirigir(17,false));
+suaIdade(53);
